@@ -1,0 +1,50 @@
+#Tabs li:hover ul {
+	display:block;
+}
+
+#Tabs {
+	background-color:Grey;
+	border:1px solid Grey;
+	font:15px Sans-serif;
+	height:59px;
+	width:1000px;
+	margin-bottom:100px;
+}
+
+#Tabs ul {
+	margin:0px;
+	padding:0px;
+}
+
+#Tabs li {
+	position:relative;
+	float:left;
+	list-style-type:none;
+}
+
+#Tabs li a {
+	text-decoration:none;
+	display:block;
+	padding:20px 33px;
+	border:1px solid #B0C4DE;
+	background-color:#F5F5F5;
+	width:43px;
+	text-align:center;
+}
+
+#Tabs li a:hover {
+	text-decoration:none;
+	display:block;
+	padding:20px 33px;
+	border:1px solid #B0C4DE;
+	background-color:#D3D3D3;
+	font: bold 15px Sans-serif;
+	width:43px;
+	text-align:center;
+}
+
+#Tabs ul ul {
+	position:absolute;
+	display:none;
+	left:0px;
+}

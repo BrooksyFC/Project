@@ -1,0 +1,109 @@
+body {
+	background-image: url(../Images/darksouls.jpg);
+	background-attachment: fixed;
+	background-size: 1750px 870px;
+}
+
+#Main {
+	width:1000px;
+	min-height:850px;
+	height:auto;
+	margin-top:20px;
+	margin-bottom:60px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: white; 
+}
+
+.topics {
+	display:block;
+	border: 1px solid black;
+	background-color:grey;
+	color:black;
+	padding:10px;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+
+.topics:hover {
+	display:block;
+	border: 1px solid black;
+	background-color:black;
+	color:white;	
+}
+
+#Content {
+	margin-left:215px;
+	margin-top:-700px;
+}
+
+#Profile {
+	border: solid 1px black;
+	height:400px;
+	width:300px;
+	margin-left:480px;
+	margin-top:-145px;
+}
+
+
+hr {
+	background-color: grey;
+	height: 1px;
+	width:680px;
+}
+
+#search {
+	background-image:url(../Images/search.png);
+	background-repeat: no-repeat; 
+	background-size: 20px;
+	padding-left: 20px;
+	margin-left:5px;
+	width:135px;
+}
+
+
+.nav-stacked {
+	width:200px;
+	margin-left:5px;
+	color:white;
+}
+
+#Inverse1 {
+	width: 800px;
+}
+
+#Inverse2 {
+	width: 200px;
+	margin-left:800px;
+	margin-top:-70px;
+	color: white;
+}
+
+.nav.nav-pills.nav-justified li a {
+	color:		#FF0000;
+}
+
+.nav.nav-pills li a {
+	color:		#FF0000;
+}
+
+.nav.nav-pills li a:hover { 
+	background-color: #A9A9A9; 
+	color:	#000000;
+}
+
+.nav.nav-pills .active a { 
+	background-color:	#DCDCDC; 
+	color:	#000000;
+}
+
+
+#Footer {
+	height:150px;
+	background-image: url(../Images/fallout-4-banner-1.jpg);
+	background-size: 1000px 180px;
+    background-repeat: no-repeat;
+	margin-top:-60px;
+	margin-left:365px;
+	margin-bottom:20px;
+}
