@@ -84,13 +84,20 @@ session_start();
   </ul>
 	</nav>
 <div id="Content"><h2>Latest Gaming Prices</h2>
-<?php
-include("Functions/Prices.php");
+<form action="PriceSearch.php" method="GET">
+<input type="text" id="search" name="value" placeholder="Search">
+<input type="submit" name="search" value="Search">
+</form>
+<?php  
+include('Functions/PriceList.php'); 
 ?>
+
+
 </div>
 </div>
 </div>
-<div id="Footer"></div>
+<div id="Footer">
+</div>
 </div>
 </body>
 </html>
