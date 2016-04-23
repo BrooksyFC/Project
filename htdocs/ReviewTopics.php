@@ -83,7 +83,7 @@ session_start();
 </li>
   </ul>
 	</nav>
-<div id="Content"><h2>User Reviews</h2><h3>Reviews</h3>
+<div id="Content"><h2>User Reviews</h2>
 <?php
 error_reporting(0);
 

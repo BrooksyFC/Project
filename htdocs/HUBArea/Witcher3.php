@@ -9,7 +9,7 @@ session_start();
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <link id="pagestyle" href="../CSS/Layout.css" rel="stylesheet" type="text/css" />
 </head>
-<body style="background-image: url(../Images/656603.jpg)">
+<body style="background-image: url(../Images/587508.png)">
 <div id="Main">
 <div> <img src="../Images/Logo.png" alt="Logo"></div>
 <nav class="navbar navbar-inverse" id="inverse1">
@@ -84,31 +84,30 @@ session_start();
   </ul>
 	</nav>
 <div id="Content">
-<img src="/Images/Fallout_4_logo.png" width="350px" style="margin-left:200px;"></img>
-<h3>Lastest Fallout 4 News</h3>
+<img src="/Images/witcher3logo.png" width="320px" style="margin-left:200px;"></img>
+<h3>Lastest Witcher 3 News</h3>
 <hr>
-<h3><a href="../PriceSearch.php?value=fallout+4&search=Search">Click here</a> for the latest Fallout 4 prices</h3>  
+<h3><a href="../PriceSearch.php?value=witcher+3&search=Search">Click here</a> for the latest Witcher 3 prices</h3>  
 <hr>
 <h3><a href="../Review.php">Click here</a> the Critic Reviews or <a href="../ReviewTopics.php?cid=3">here</a> to write your own user reviews</h3> 
 <hr>
-<h3>Latest Fallout 4 Videos</h3>
-<script type="text/javascript" src="http://ytchannelembed.com/ytce-frgallery.js"></script><div style="width:100%;max-width:780px;" class="ytce" data-user="BethesdaSoftworks" data-rows="2" data-ratio="hd" data-width="250" data-margin="15" data-desc="100" data-desc_color="9E9E9E" data-title="30" data-title_color="000000" data-https="0" data-duration="1" data-views="1" data-likes="1" data-dislikes="1" data-fav="1" data-cols="3" ></div>
-<hr>
-<h3>Latest Fallout 4 Images</h3>         
+<h3>Latest Witcher 3 Videos</h3>
+<script type="text/javascript" src="http://ytchannelembed.com/ytce-frgallery.js"></script><div style="width:100%;max-width:780px;" class="ytce" data-user="TheWitcher" data-rows="2" data-ratio="hd" data-width="250" data-margin="15" data-desc="100" data-desc_color="9E9E9E" data-title="30" data-title_color="000000" data-https="0" data-duration="1" data-views="1" data-likes="1" data-dislikes="1" data-fav="1" data-cols="3" ></div>
+<h3>Latest Witcher 3 Images</h3>         
 <div class="row">
     <div class="col-md-4">
-      <a href="../Images/falloutimage1.png" class="thumbnail">  
-        <img src="/Images/falloutimage1.png" alt="Pulpit Rock" style="width:250px;height:150px">
+      <a href="../Images/witcherimage1.png" class="thumbnail">  
+        <img src="/Images/witcherimage1.png" alt="Pulpit Rock" style="width:250px;height:150px">
       </a>
     </div>
     <div class="col-md-4">
-      <a href="../Images/falloutimage2.png" class="thumbnail">
-        <img src="/Images/falloutimage2.png" alt="Moustiers Sainte Marie" style="width:250px;height:150px">
+      <a href="../Images/witcherimage2.png" class="thumbnail">
+        <img src="/Images/witcherimage2.png" alt="Moustiers Sainte Marie" style="width:250px;height:150px">
       </a>
     </div>
     <div class="col-md-4">
-      <a href="../Images/falloutimage3.jpg" class="thumbnail">     
-        <img src="/Images/falloutimage3.jpg" alt="Cinque Terre" style="width:250px;height:150px">
+      <a href="../Images/witcherimage3.jpg" class="thumbnail">     
+        <img src="/Images/witcherimage3.jpg" alt="Cinque Terre" style="width:250px;height:150px">
       </a>
     </div>
 </div> 
