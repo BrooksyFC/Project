@@ -6,7 +6,8 @@ session_start();
 <link href="CSS/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<link href="CSS/Layout.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link id="pagestyle" href="CSS/Layout.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="Main">
@@ -16,8 +17,7 @@ session_start();
       <ul class="nav nav-pills nav-justified">
 	      <li class="active"><a href="Design.php">Home</a></li>
          <li class = "dropdown">
-            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">News<span class = "caret"></span>
-            </a>
+            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">News<span class = "caret"></span></a>
             <ul class = "dropdown-menu">
                <li><a href = "XboxOne.php">Xbox One</a></li>
                <li><a href = "PS4.php">PlayStation 4</a></li>
@@ -28,7 +28,13 @@ session_start();
                <li><a href = "DS.php">Nintendo DS</a></li>			
             </ul>
         </li>
-    <li><a href="Review.php">Reviews</a></li>
+    <li class="dropdown">
+	<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Reviews<span class = "caret"></span></a>
+	<ul class = "dropdown-menu">
+        <li><a href = "Review.php">Critic Reviews</a></li>
+        <li><a href = "UserReviews.php">User Reviews</a></li>	
+    </ul> 
+	</li>
     <li><a href="Videos.php">Videos</a></li>
     <li><a href="Price.php">Prices</a></li>
     <li><a href="Profile.php">Profile</a></li>
@@ -60,12 +66,12 @@ session_start();
   <ul class="nav nav-pills">
 <h4 align="center" color="red">Coming Soon</h4>
 <li align="center">
-<a href="PS43.php">Dark Souls 3</a>
-<a href="PC3.php">Lego Star Wars: The Force Awakens</a>	
-<a href="Wii3.php">Uncharted 4: A Thiefs End</a>
-<a href="Wii3.php">Doom</a>
-<a href="Wii3.php">Overwatch</a>
-<a href="Wii3.php">Mirrors End Catalyst</a>
+<a href="http://www.darksouls3.com/en/" target="_blank">Dark Souls 3</a>
+<a href="http://www.lego.com/en-gb/starwars/games/videogame" target="_blank">Lego Star Wars: The Force Awakens</a>	
+<a href="http://www.unchartedthegame.com/en-gb/" target="_blank">Uncharted 4: A Thiefs End</a>
+<a href="http://doom.com/en-gb/" target="_blank">Doom</a>
+<a href="http://eu.battle.net/overwatch/en/" target="_blank">Overwatch</a>
+<a href="http://www.mirrorsedge.com/" target="_blank">Mirrors End Catalyst</a>
 </li>
   </ul>
 	</nav>	
@@ -74,11 +80,11 @@ session_start();
   <ul class="nav nav-pills">
 <h4 align="center">Top 5 Games of 2015</h4>
 <li align="center">
-<a href="XboxOne3.php">Witcher 3: Wild Hunt</a>
-<a href="PS43.php">Grand Theft Auto: V</a>
-<a href="PC3.php">Fallout 4</a>	
-<a href="Wii3.php">Metal Gear Solid V: The Phantom Pain</a>
-<a href="Wii3.php">The Legend of Zelda: Majora's Mask</a>
+<a href="HUBArea/Witcher3.php">Witcher 3: Wild Hunt</a>
+<a href="HUBArea/GTAV.php">Grand Theft Auto: V</a>
+<a href="HUBArea/Fallout4.php">Fallout 4</a>	
+<a href="HUBArea/MetalGear.php">Metal Gear Solid V: The Phantom Pain</a>
+<a href="HUBArea/Zelda.php">The Legend of Zelda: Majora's Mask</a>
 </li>
   </ul>
 	</nav>
@@ -86,6 +92,7 @@ session_start();
 <?php
 include("Database/Connect.php");
 //if search button pressed
+set_time_limit(0);
 if(isset($_GET['search'])){
 	
 	$search_value = $_GET['value'];
@@ -98,7 +105,7 @@ if(isset($_GET['search'])){
 		
 		$PriceList = $row['PriceList'];
 		
-		echo include"Prices/$PriceList";
+		include "Prices/$PriceList";
 		
 	}
 	

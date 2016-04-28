@@ -15,10 +15,9 @@ session_start();
 <nav class="navbar navbar-inverse" id="inverse1">
    <div>
       <ul class="nav nav-pills nav-justified">
-	      <li><a href="Design.php">Home</a></li>
+	      <li class="active"><a href="Design.php">Home</a></li>
          <li class = "dropdown">
-            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">News<span class = "caret"></span>
-            </a>
+            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">News<span class = "caret"></span></a>
             <ul class = "dropdown-menu">
                <li><a href = "XboxOne.php">Xbox One</a></li>
                <li><a href = "PS4.php">PlayStation 4</a></li>
@@ -29,8 +28,14 @@ session_start();
                <li><a href = "DS.php">Nintendo DS</a></li>			
             </ul>
         </li>
-    <li><a href="Review.php">Reviews</a></li>
-    <li class="active"><a href="Videos.php">Videos</a></li>
+    <li class="dropdown">
+	<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Reviews<span class = "caret"></span></a>
+	<ul class = "dropdown-menu">
+        <li><a href = "Review.php">Critic Reviews</a></li>
+        <li><a href = "UserReviews.php">User Reviews</a></li>	
+    </ul> 
+	</li>
+    <li><a href="Videos.php">Videos</a></li>
     <li><a href="Price.php">Prices</a></li>
     <li><a href="Profile.php">Profile</a></li>
     <li><a href="Forum.php">Forum</a></li>	
@@ -75,11 +80,11 @@ session_start();
   <ul class="nav nav-pills">
 <h4 align="center">Top 5 Games of 2015</h4>
 <li align="center">
-<a href="http://thewitcher.com/en/witcher3" target="_blank">Witcher 3: Wild Hunt</a>
-<a href="http://www.rockstargames.com/V/" target="_blank">Grand Theft Auto: V</a>
-<a href="https://www.fallout4.com/" target="_blank">Fallout 4</a>	
-<a href="http://www.konami.jp/mgs5/tpp/certification.php5" target="_blank">Metal Gear Solid V: The Phantom Pain</a>
-<a href="http://www.zelda.com/majoras-mask/" target="_blank">The Legend of Zelda: Majora's Mask</a>
+<a href="HUBArea/Witcher3.php">Witcher 3: Wild Hunt</a>
+<a href="HUBArea/GTAV.php">Grand Theft Auto: V</a>
+<a href="HUBArea/Fallout4.php">Fallout 4</a>	
+<a href="HUBArea/MetalGear.php">Metal Gear Solid V: The Phantom Pain</a>
+<a href="HUBArea/Zelda.php">The Legend of Zelda: Majora's Mask</a>
 </li>
   </ul>
 	</nav>

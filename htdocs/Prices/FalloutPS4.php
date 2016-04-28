@@ -15,7 +15,9 @@ foreach($html9->find('div.product_productprice span') as $element9)
 foreach($html10->find('div#auto_show_prime_price') as $element10)
 foreach($html11->find('div.product-details span.price') as $element11)
 foreach($html12->find('div.mt5 b.cost_p') as $element12)
-
+foreach($html ->find('img') as $item) {
+    $item->outertext = '';
+    }
   echo
   
     "<table class='table table-striped'>

@@ -1,5 +1,5 @@
 body {
-	background-image: url(../Images/darksouls.jpg);
+	background-image: url(../Images/doom.jpg);
 	background-attachment: fixed;
 	background-size: 1750px 870px;
 }
@@ -9,7 +9,7 @@ body {
 	min-height:850px;
 	height:auto;
 	margin-top:20px;
-	margin-bottom:60px;
+	margin-bottom:20px;
 	margin-left:auto;
 	margin-right:auto;
 	background-color: white; 
@@ -103,11 +103,11 @@ hr {
 
 
 #Footer {
-	height:150px;
-	background-image: url(../Images/fallout-4-banner-1.jpg);
-	background-size: 1000px 180px;
+	height:199px;
+	background-image: url(../Images/banner.png);
+	background-size: 1000px 140px;
     background-repeat: no-repeat;
-	margin-top:-60px;
+	margin-top:-20px;
 	margin-left:365px;
 	margin-bottom:20px;
 }

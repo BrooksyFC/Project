@@ -63,6 +63,7 @@ define('DEFAULT_TARGET_CHARSET', 'UTF-8');
 define('DEFAULT_BR_TEXT', "\r\n");
 define('DEFAULT_SPAN_TEXT', " ");
 define('MAX_FILE_SIZE', 600000);
+set_time_limit(0);
 // helper functions
 // -----------------------------------------------------------------------------
 // get html dom from file

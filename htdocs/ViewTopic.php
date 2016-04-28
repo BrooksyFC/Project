@@ -15,10 +15,9 @@ session_start();
 <nav class="navbar navbar-inverse" id="inverse1">
    <div>
       <ul class="nav nav-pills nav-justified">
-	      <li><a href="Design.php">Home</a></li>
+	      <li class="active"><a href="Design.php">Home</a></li>
          <li class = "dropdown">
-            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">News<span class = "caret"></span>
-            </a>
+            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">News<span class = "caret"></span></a>
             <ul class = "dropdown-menu">
                <li><a href = "XboxOne.php">Xbox One</a></li>
                <li><a href = "PS4.php">PlayStation 4</a></li>
@@ -29,11 +28,17 @@ session_start();
                <li><a href = "DS.php">Nintendo DS</a></li>			
             </ul>
         </li>
-    <li><a href="Review.php">Reviews</a></li>
+    <li class="dropdown">
+	<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Reviews<span class = "caret"></span></a>
+	<ul class = "dropdown-menu">
+        <li><a href = "Review.php">Critic Reviews</a></li>
+        <li><a href = "UserReviews.php">User Reviews</a></li>	
+    </ul> 
+	</li>
     <li><a href="Videos.php">Videos</a></li>
     <li><a href="Price.php">Prices</a></li>
     <li><a href="Profile.php">Profile</a></li>
-    <li class="active"><a href="Forum.php">Forum</a></li>	
+    <li><a href="Forum.php">Forum</a></li>	
       </ul>
    </div>
 </nav>
@@ -61,12 +66,12 @@ session_start();
   <ul class="nav nav-pills">
 <h4 align="center" color="red">Coming Soon</h4>
 <li align="center">
-<a href="PS43.php">Dark Souls 3</a>
-<a href="PC3.php">Lego Star Wars: The Force Awakens</a>	
-<a href="Wii3.php">Uncharted 4: A Thiefs End</a>
-<a href="Wii3.php">Doom</a>
-<a href="Wii3.php">Overwatch</a>
-<a href="Wii3.php">Mirrors End Catalyst</a>
+<a href="http://www.darksouls3.com/en/" target="_blank">Dark Souls 3</a>
+<a href="http://www.lego.com/en-gb/starwars/games/videogame" target="_blank">Lego Star Wars: The Force Awakens</a>	
+<a href="http://www.unchartedthegame.com/en-gb/" target="_blank">Uncharted 4: A Thiefs End</a>
+<a href="http://doom.com/en-gb/" target="_blank">Doom</a>
+<a href="http://eu.battle.net/overwatch/en/" target="_blank">Overwatch</a>
+<a href="http://www.mirrorsedge.com/" target="_blank">Mirrors End Catalyst</a>
 </li>
   </ul>
 	</nav>	
@@ -75,11 +80,11 @@ session_start();
   <ul class="nav nav-pills">
 <h4 align="center">Top 5 Games of 2015</h4>
 <li align="center">
-<a href="XboxOne3.php">Witcher 3: Wild Hunt</a>
-<a href="PS43.php">Grand Theft Auto: V</a>
-<a href="PC3.php">Fallout 4</a>	
-<a href="Wii3.php">Metal Gear Solid V: The Phantom Pain</a>
-<a href="Wii3.php">The Legend of Zelda: Majora's Mask</a>
+<a href="HUBArea/Witcher3.php">Witcher 3: Wild Hunt</a>
+<a href="HUBArea/GTAV.php">Grand Theft Auto: V</a>
+<a href="HUBArea/Fallout4.php">Fallout 4</a>	
+<a href="HUBArea/MetalGear.php">Metal Gear Solid V: The Phantom Pain</a>
+<a href="HUBArea/Zelda.php">The Legend of Zelda: Majora's Mask</a>
 </li>
   </ul>
 	</nav>
@@ -125,8 +130,8 @@ if (mysql_num_rows($result) == 1) {
 		$query2 = "SELECT * FROM posts WHERE forum_id='".$cid."' AND topic_id='".$tid."'";
 		$result2 = mysql_query($query2) or die(mysql_error());
 		while ($row2 = mysql_fetch_assoc($result2)) {
-			echo"<tr><td valign='top' style='border: 1px solid black;'><div style='min-height: 125px; width: 600px;'><font >".$row['topic_title']."</font><br> by ".getusername($row2['post_creator'])." - ".$row2['post_date']."<hr>".$row2['post_content']."</div></td>
-			<td width='200' valign='top' align='center' style='border: 1px solid black;'>Username: ".getusername($row2['post_creator'])."<br><img src='Images/Profile/".getid($row2['post_creator']).".".getprofile($row2['post_creator'])."' height='100' width='100'></img></td></tr><tr><td colspan='2'><hr></td></tr>";
+			echo"<tr><td valign='top' style='border: 1px solid black; border-radius: 25px;'><div style='min-height: 50px; width: 625px; background-color: #cccccc;'><font style='color: #FF0000;'>".$row['topic_title']."<br> by ".getusername($row2['post_creator'])." - ".$row2['post_date']."</font></div><div >".$row2['post_content']."</div></td>
+			<td width=150' height='130' valign='top' align='center' style='border: 1px solid black;'>Username:<a href='http://localhost/Profile.php?id=".getid($row2['post_creator'])."'>".getusername($row2['post_creator'])."</a><br><img src='Images/Profile/".getid($row2['post_creator']).".".getprofile($row2['post_creator'])."' height='100' width='100'></img></td></tr><tr><td colspan='2'><hr></td></tr>";
 		}
 		$old_views = $row['topic_views'];
 		$new_views = $old_views + 1;

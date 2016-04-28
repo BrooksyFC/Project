@@ -2,12 +2,11 @@
 include("/simple_html_dom.php");
 
 
-$html6 = file_get_html("http://www.gameseek.co.uk/pd/VideoGameshbhvcnthar/Fallout-4");
+$html6 = file_get_html("http://www.eurogamer.net/games/witcher-3-wild-hunt");
 
 
 
-foreach($html6->find('div.mt5 b.cost_p') as $element6)
-
+foreach($html6->find('div#articles div.group') as $element6)
 
   echo
   
